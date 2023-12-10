@@ -46,7 +46,7 @@ function getWeather(latitude,longitude){
     let api='https://api.openweathermap.org/data/2.5/weather?lat='+latitude+'&lon='+longitude+'&appid='+key;
     fetch(api)
         .then(function(response){
-            let data =response.json(); 
+            let data =response.json(); //This is an expression that retrieves the JSON data from the response object and parses it into a JavaScript object.
             return data;
         })
         .then(function(data){
